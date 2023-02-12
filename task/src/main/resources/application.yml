@@ -5,8 +5,8 @@ spring:
       suffix: .jsp
   datasource:
     url: jdbc:mysql://database-1.c86beyinvows.ap-northeast-2.rds.amazonaws.com/test
-    username: admin
-    password: aa192837
+    username: 
+    password: 
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
