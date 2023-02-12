@@ -1,4 +1,8 @@
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
   datasource:
     url: jdbc:mysql://database-1.c86beyinvows.ap-northeast-2.rds.amazonaws.com/test
     username: admin
@@ -6,7 +10,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+      ddl-auto: update
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     properties:
@@ -14,3 +20,5 @@ spring:
         show_sql: true
         format_sql: true
         use_sql_comments: true
+
+

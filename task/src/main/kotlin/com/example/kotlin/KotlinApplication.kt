@@ -1,11 +1,13 @@
-package site.seyun298.task
+package com.example.kotlin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
+
 @SpringBootApplication
-class TaskApplication
+class KotlinApplication
+
 
 fun main(args: Array<String>) {
-	runApplication<TaskApplication>(*args)
+    runApplication<KotlinApplication>(*args)
 }
