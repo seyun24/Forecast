@@ -5,7 +5,7 @@
 <sql:setDataSource
         var="ds"
         driver="com.mysql.jdbc.Driver"
-        url="jdbc:mysql://database-1.c86beyinvows.ap-northeast-2.rds.amazonaws.com/test"
+        url=""
         user=""
         password=""
 />
